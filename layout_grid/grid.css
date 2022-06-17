@@ -1,30 +1,46 @@
+body {
+    background-color: black;
+}
+.wrapper{
+    height: 100%;
+    display: grid;
+    
+}
 .container {
     display: grid;
-    grid-template-columns: 70% 30%;
+    
     grid-template-rows: 80px 80px;
-    gap: 5px;
+    gap: 10px;
 }
-
+.container > div {
+text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
 .g1 {
     background-color: blueviolet;
-    grid-column: 1 / 2;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 }
 .g2 {
     background-color: red;
-   
+    grid-column: 3;
+    grid-row: 1 / span 2;
 }
 .g3 {
     background-color: pink;
-    grid-row: 2/4;
+    grid-column: 1/1 ;
+    grid-row: 3/ span 6;
     
 }
 .g4 {
     background-color: purple;
-    grid-row:2/3;
+    grid-row: 3/ span 3;
+    grid-column: 2/ span 2 ;
     
 }
 .g5 {
-    background-color: yellowgreen;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    background-color: green;
+    grid-row: 6 / span 3;
+    grid-column: 2/ span 2 ;
 }
