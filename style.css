@@ -11,6 +11,20 @@ body, html {
     justify-content: center;
     
 }
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    background-color: hsl(184, 100%, 22%);
+}
+.btn a {
+    text-decoration: none;
+    color:white;
+    font-family:  'Lexend Deca', sans-serif;
+
+}
 @media (max-width: 1440px) {
     .container {
         display: flex;
